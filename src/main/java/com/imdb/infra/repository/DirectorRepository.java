@@ -1,10 +1,16 @@
 package com.imdb.infra.repository;
 
-import com.imdb.adapters.DirectorGateway;
+import com.imdb.core.cases.director.Director;
+import com.imdb.infra.database.ImdbCatalog;
 
-public class DirectorRepository implements DirectorGateway {
+public class DirectorRepository extends AbstractRepository {
+
+    public DirectorRepository(ImdbCatalog imdbCatalog) {
+        super(imdbCatalog);
+    }
+
     @Override
-    public void deleteDirector(Long id) {
-
+    protected Class modelClass() {
+        return Director.class;
     }
 }

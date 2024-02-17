@@ -11,33 +11,32 @@ import java.util.List;
 public class ImdbCatalogUseCaseImpl implements ImdbCatalogUseCase {
 
     private final ImdbCatalogGateway imdbCatalogGateway;
-    public ImdbCatalogUseCaseImpl(ImdbCatalogGateway imdbCatalogGateway) {
+
+    private ImdbCatalogUseCaseImpl(ImdbCatalogGateway imdbCatalogGateway) {
         this.imdbCatalogGateway = imdbCatalogGateway;
     }
 
     @Override
-    public void cadastrarFilme(Movie movie) {
-        //não recebe filme, mas sim os atributos e cria o new filme aqui
-        imdbCatalogGateway.cadastrarFilme(movie);
+    public void cadastrarFilme(String name, String dataDeLancamento, String descricao) {
+
     }
 
     @Override
     public void cadastrarAtor(Actor actor) {
-        imdbCatalogGateway.cadastrarAtor(actor);
+
     }
 
     @Override
     public void cadastrarDiretor(Director director) {
-        imdbCatalogGateway.cadastrarDiretor(director);
+
     }
 
     @Override
     public void associafilmeComAtoresDiretores(Movie movie, List<Actor> actors, List<Director> directors) {
-        imdbCatalogGateway.associafilmeComAtoresDiretores(movie, actors, directors);
+
     }
 
     @Override
     public void pesquisarFilme(String nameFilme) {
-        imdbCatalogGateway.pesquisarFilme(nameFilme);
     }
 }

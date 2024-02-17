@@ -99,7 +99,7 @@ public class Comment extends Evaluation {
 ## Funções da Aplicação
 
 ```java
-// Método registerMovie(Movie movie): adiciona um novo filme ao banco de dados
+// Método registerMovie(Movie Movie): adiciona um novo filme ao banco de dados
 public void registerMovie(Movie movie) {
     // implementação
 }
@@ -114,12 +114,12 @@ public void registerDirector(Director director) {
     // implementação
 }
 
-// Método associateMovie(Movie movie, Actor actor, Director director): associa um filme a seus atores e diretores
+// Método associateMovie(Movie Movie, Actor actor, Director director): associa um filme a seus atores e diretores
 public void associateMovie(Movie movie, Actor actor, Director director) {
     // implementação
 }
 
-// Método addEvaluation(Movie movie, Evaluation evaluation): adiciona uma avaliação ou comentário a um filme
+// Método addEvaluation(Movie Movie, Evaluation evaluation): adiciona uma avaliação ou comentário a um filme
 public void addEvaluation(Movie movie, Evaluation evaluation) {
     // implementação
 }
@@ -134,7 +134,7 @@ public List<Movie> searchMovieByGenre(String genre) {
     // implementação
 }
 
-// Método calculateAverageRating(Movie movie): calcula a classificação média de um filme
+// Método calculateAverageRating(Movie Movie): calcula a classificação média de um filme
 public double calculateAverageRating(Movie movie) {
     // implementação
 }

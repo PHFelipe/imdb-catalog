@@ -1,6 +1,5 @@
 package com.imdb.application.impl;
 
-import com.imdb.adapters.MovieGateway;
 import com.imdb.core.cases.movie.MovieUseCase;
 
 public class MovieUseCaseImpl implements MovieUseCase {

@@ -1,35 +1,16 @@
 package com.imdb.infra.repository;
 
-import com.imdb.adapters.ImdbCatalogGateway;
-import com.imdb.core.cases.actor.Actor;
 import com.imdb.core.cases.director.Director;
-import com.imdb.core.cases.movie.Movie;
+import com.imdb.infra.database.ImdbCatalog;
 
-import java.util.List;
-
-public class ImdbCatalogRepository implements ImdbCatalogGateway {
-    @Override
-    public void cadastrarFilme(Movie movie) {
-
+public class ImdbCatalogRepository  extends AbstractRepository{
+    public ImdbCatalogRepository(ImdbCatalog imdbCatalog) {
+        super(imdbCatalog);
     }
 
     @Override
-    public void cadastrarAtor(Actor actor) {
-
+    protected Class modelClass() {
+        return ImdbCatalog.class;
     }
 
-    @Override
-    public void cadastrarDiretor(Director director) {
-
-    }
-
-    @Override
-    public void associafilmeComAtoresDiretores(Movie movie, List<Actor> actors, List<Director> directors) {
-
-    }
-
-    @Override
-    public void pesquisarFilme(String nameFilme) {
-
-    }
 }
