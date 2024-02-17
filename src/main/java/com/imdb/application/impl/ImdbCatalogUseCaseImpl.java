@@ -9,8 +9,7 @@ import com.imdb.core.cases.catalog.ImdbCatalogUseCase;
 import java.util.List;
 
 public class ImdbCatalogUseCaseImpl implements ImdbCatalogUseCase {
-    private final ImdbCatalogRepositoryGateway imdbCatalogGateway = new ImdbCatalogRepositoryGateway();
-
+    private final ImdbCatalogRepositoryGateway imdbCatalogGateway = ImdbCatalogRepositoryGateway.getInstance();
 
     @Override
     public void cadastrarFilme(String name, String dataDeLancamento, String descricao) {

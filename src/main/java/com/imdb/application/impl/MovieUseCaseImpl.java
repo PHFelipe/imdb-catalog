@@ -4,7 +4,7 @@ import com.imdb.adapters.MovieRepositoryGateway;
 import com.imdb.core.cases.movie.MovieUseCase;
 
 public class MovieUseCaseImpl implements MovieUseCase {
-    private final MovieRepositoryGateway movieGateway = new MovieRepositoryGateway();
+    private final MovieRepositoryGateway movieGateway = MovieRepositoryGateway.getInstance();
 
     @Override
     public void delete(Long id) {

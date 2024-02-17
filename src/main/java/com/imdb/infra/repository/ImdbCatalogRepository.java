@@ -1,16 +1,27 @@
 package com.imdb.infra.repository;
 
-import com.imdb.core.cases.actor.Actor;
 import com.imdb.infra.database.ImdbCatalog;
 
+import java.util.Objects;
+
 public class ImdbCatalogRepository  extends AbstractRepository{
-    public ImdbCatalogRepository(ImdbCatalog imdbCatalog) {
+    private static final ImdbCatalog imdbCatalog = ImdbCatalog.getInstance();
+    private static ImdbCatalogRepository instance;
+
+    public ImdbCatalogRepository() {
         super(imdbCatalog);
+    }
+
+    public static ImdbCatalogRepository getInstance() {
+        if (Objects.isNull(instance)) {
+            instance = new ImdbCatalogRepository();
+        }
+        return instance;
     }
 
     @Override
     protected Class<?> modelClass() {
-        return ImdbCatalog.class;
+        return com.imdb.core.cases.catalog.ImdbCatalog.class;
     }
 
 }

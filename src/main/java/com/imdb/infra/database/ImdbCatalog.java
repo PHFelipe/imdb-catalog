@@ -1,11 +1,24 @@
 package com.imdb.infra.database;
 
+import com.imdb.infra.repository.ActorRepository;
+
 import java.util.*;
 
 public class ImdbCatalog {
 
     // Mapa estático para armazenar objetos por tipo de classe
     private static final Map<Class<?>, Set<Object>> OBJECTS = new HashMap<>();
+    private static ImdbCatalog instance;
+
+    private ImdbCatalog() {
+
+    }
+    public static ImdbCatalog getInstance() {
+        if (Objects.isNull(instance)) {
+            instance = new ImdbCatalog();
+        }
+        return instance;
+    }
 
     // Método para adicionar um objeto ao catálogo
     public void create(Object object) {
