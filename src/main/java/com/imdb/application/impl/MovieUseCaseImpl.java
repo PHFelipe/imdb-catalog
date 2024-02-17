@@ -1,17 +1,13 @@
 package com.imdb.application.impl;
 
+import com.imdb.adapters.MovieRepositoryGateway;
 import com.imdb.core.cases.movie.MovieUseCase;
 
 public class MovieUseCaseImpl implements MovieUseCase {
-
-    private final MovieGateway movieGateway;
-
-    public MovieUseCaseImpl(MovieGateway movieGateway) {
-        this.movieGateway = movieGateway;
-    }
+    private final MovieRepositoryGateway movieGateway = new MovieRepositoryGateway();
 
     @Override
     public void delete(Long id) {
-        movieGateway.deleteMovie(id);
+        movieGateway.delete(id);
     }
 }

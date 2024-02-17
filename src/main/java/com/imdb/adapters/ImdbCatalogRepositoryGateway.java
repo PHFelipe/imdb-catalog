@@ -1,20 +1,19 @@
-package com.imdb.application.impl;
+package com.imdb.adapters;
 
-import com.imdb.adapters.ImdbCatalogRepositoryGateway;
 import com.imdb.core.cases.actor.Actor;
+import com.imdb.core.cases.catalog.ImdbCatalogUseCase;
 import com.imdb.core.cases.director.Director;
 import com.imdb.core.cases.movie.Movie;
-import com.imdb.core.cases.catalog.ImdbCatalogUseCase;
+import com.imdb.infra.database.ImdbCatalog;
+import com.imdb.infra.repository.ImdbCatalogRepository;
 
 import java.util.List;
 
-public class ImdbCatalogUseCaseImpl implements ImdbCatalogUseCase {
-    private final ImdbCatalogRepositoryGateway imdbCatalogGateway = new ImdbCatalogRepositoryGateway();
-
-
+public class ImdbCatalogRepositoryGateway implements ImdbCatalogUseCase {
+    ImdbCatalogRepository imdbCatalogRepository = new ImdbCatalogRepository(new ImdbCatalog());
     @Override
     public void cadastrarFilme(String name, String dataDeLancamento, String descricao) {
-        imdbCatalogGateway.cadastrarFilme(name, dataDeLancamento, descricao);
+
     }
 
     @Override
@@ -33,6 +32,7 @@ public class ImdbCatalogUseCaseImpl implements ImdbCatalogUseCase {
     }
 
     @Override
-    public void pesquisarFilme(String nameFilme) {
+    public void pesquisarFilme(String nameMovie) {
+
     }
 }
