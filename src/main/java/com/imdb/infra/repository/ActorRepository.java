@@ -2,7 +2,6 @@ package com.imdb.infra.repository;
 
 
 import com.imdb.core.cases.actor.Actor;
-import com.imdb.infra.database.ImdbCatalog;
 
 import java.util.ArrayList;
 import java.util.List;

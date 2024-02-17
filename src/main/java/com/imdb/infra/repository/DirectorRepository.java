@@ -1,7 +1,6 @@
 package com.imdb.infra.repository;
 
 import com.imdb.core.cases.director.Director;
-import com.imdb.infra.database.ImdbCatalog;
 
 public class DirectorRepository extends AbstractRepository {
 

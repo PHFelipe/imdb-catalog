@@ -1,7 +1,5 @@
 package com.imdb.infra.repository;
 
-import com.imdb.infra.database.ImdbCatalog;
-
 import java.util.Collections;
 import java.util.List;
 
