@@ -1,11 +1,6 @@
 package com.imdb;
 
-import com.imdb.application.scanner.*;
 import com.imdb.infra.database.ImdbCatalog;
-import com.imdb.infra.repository.ActorRepository;
-import com.imdb.infra.repository.DirectorRepository;
-import com.imdb.infra.repository.ImdbCatalogRepository;
-import com.imdb.infra.repository.MovieRepository;
 
 public class Main {
 

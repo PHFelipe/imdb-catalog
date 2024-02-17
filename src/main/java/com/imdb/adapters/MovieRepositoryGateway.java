@@ -7,7 +7,7 @@ import com.imdb.infra.repository.MovieRepository;
 import java.util.Objects;
 
 public class MovieRepositoryGateway implements MovieUseCase {
-    private static MovieRepository movieRepository;
+    private final  MovieRepository movieRepository;
     private static MovieRepositoryGateway instance;
     private MovieRepositoryGateway(){
         movieRepository = MovieRepository.getInstance();

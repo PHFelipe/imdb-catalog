@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Objects;
 
 public class ImdbCatalogRepositoryGateway implements ImdbCatalogUseCase {
-    private static ImdbCatalogRepository imdbCatalogRepository;
+    private final ImdbCatalogRepository imdbCatalogRepository;
     private static ImdbCatalogRepositoryGateway instance;
     private ImdbCatalogRepositoryGateway(){
         imdbCatalogRepository = ImdbCatalogRepository.getInstance();

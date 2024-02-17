@@ -6,7 +6,7 @@ import com.imdb.infra.repository.ActorRepository;
 import java.util.Objects;
 
 public class ActorRepositoryGateway implements ActorUseCase {
-    private static ActorRepository actorRepository;
+    private final ActorRepository actorRepository;
     private static ActorRepositoryGateway instance;
     private ActorRepositoryGateway(){
         actorRepository = ActorRepository.getInstance();
