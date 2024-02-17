@@ -1,6 +1,8 @@
 package com.imdb.infra.repository;
 
+import com.imdb.core.cases.actor.Actor;
 import com.imdb.core.cases.director.Director;
+import com.imdb.infra.database.ImdbCatalog;
 
 public class DirectorRepository extends AbstractRepository {
 
@@ -9,7 +11,7 @@ public class DirectorRepository extends AbstractRepository {
     }
 
     @Override
-    protected Class modelClass() {
+    protected Class<?> modelClass() {
         return Director.class;
     }
 }
