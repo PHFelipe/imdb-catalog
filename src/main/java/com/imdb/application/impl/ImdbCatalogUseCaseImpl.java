@@ -13,7 +13,11 @@ public class ImdbCatalogUseCaseImpl implements ImdbCatalogUseCase {
 
     @Override
     public void cadastrarFilme(String name, String dataDeLancamento, String descricao) {
-        imdbCatalogGateway.cadastrarFilme(name, dataDeLancamento, descricao);
+        Movie movie = new Movie();
+        movie.setName(name);
+        movie.setDataDeLancamento(dataDeLancamento);
+        movie.setDescricao(descricao);
+        imdbCatalogGateway.cadastrarFilme(movie);
     }
 
     @Override
