@@ -1,17 +1,21 @@
 package com.imdb;
 
-import com.imdb.appServices.ValidationService;
+
 import com.imdb.controller.MovieController;
 import com.imdb.controller.TesteController;
+
 
 import java.util.Scanner;
 
 public class ImdbLibraryApp {
 
     public static void main(String[] args) {
-        MovieController movieController = new MovieController();
         TesteController testeController = new TesteController();
+
+        MovieController movieController = new MovieController();
         testeController.teste();
+
+
         try (var scanner = new Scanner(System.in)) {
             int choice;
 

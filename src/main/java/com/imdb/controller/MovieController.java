@@ -1,17 +1,12 @@
-package com.imdb.application.controller;
+package com.imdb.controller;
 
-import com.imdb.model.Actor;
-import com.imdb.model.Director;
-import com.imdb.model.Movie;
+import com.imdb.core.cases.actor.Actor;
+import com.imdb.core.cases.director.Director;
+import com.imdb.core.cases.movie.Movie;
 
 import java.util.*;
 
 public class MovieController {
-    private final ImdbCatalogUseCaseImpl imdbCatalogUseCaseImpl;
-
-    private MovieController(ImdbCatalogUseCaseImpl imdbCatalogUseCaseImpl) {
-        this.imdbCatalogUseCaseImpl = imdbCatalogUseCaseImpl;
-    }
     private static final Scanner scanner = new Scanner(System.in);
 
     public void registerNewMovie() {

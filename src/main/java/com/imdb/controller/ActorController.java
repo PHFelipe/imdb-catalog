@@ -1,7 +1,7 @@
-package com.imdb.application.controller;
+package com.imdb.controller;
 
 import com.imdb.application.impl.ActorUseCaseImpl;
-import com.imdb.model.Actor;
+import com.imdb.core.cases.actor.Actor;
 
 import java.util.List;
 import java.util.Optional;
