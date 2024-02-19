@@ -1,8 +1,5 @@
-package com.imdb.controller;
+package com.imdb.application.controller;
 
-import com.imdb.appServices.ActorService;
-import com.imdb.appServices.DirectorService;
-import com.imdb.appServices.MovieService;
 import com.imdb.model.Actor;
 import com.imdb.model.Director;
 import com.imdb.model.Movie;
@@ -10,17 +7,11 @@ import com.imdb.model.Movie;
 import java.util.*;
 
 public class MovieController {
+    private final ImdbCatalogUseCaseImpl imdbCatalogUseCaseImpl;
 
-    private final MovieService movieService;
-    private final ActorService actorService;
-    private final DirectorService directorService;
-
-    public MovieController() {
-        movieService = new MovieService();
-        actorService = new ActorService();
-        directorService = new DirectorService();
+    private MovieController(ImdbCatalogUseCaseImpl imdbCatalogUseCaseImpl) {
+        this.imdbCatalogUseCaseImpl = imdbCatalogUseCaseImpl;
     }
-
     private static final Scanner scanner = new Scanner(System.in);
 
     public void registerNewMovie() {
@@ -615,4 +606,5 @@ public class MovieController {
             }
         }
     }
+
 }

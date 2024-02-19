@@ -1,13 +1,10 @@
 package com.imdb.controller;
 
-import com.imdb.appServices.ActorService;
-import com.imdb.appServices.DirectorService;
 import com.imdb.appServices.MovieService;
 import com.imdb.model.Actor;
 import com.imdb.model.Director;
 import com.imdb.model.Movie;
-import com.imdb.repository.impl.MovieRepository;
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 
