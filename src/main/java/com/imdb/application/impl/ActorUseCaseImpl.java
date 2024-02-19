@@ -1,7 +1,7 @@
 package com.imdb.application.impl;
 
+import com.imdb.core.cases.actor.Actor;
 import com.imdb.adapters.ActorRepositoryGateway;
-import com.imdb.model.Actor;
 import com.imdb.core.cases.actor.ActorUseCase;
 
 import java.util.List;

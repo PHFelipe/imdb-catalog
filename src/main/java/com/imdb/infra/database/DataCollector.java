@@ -1,8 +1,8 @@
 package com.imdb.infra.database;
 
-import com.imdb.model.Actor;
-import com.imdb.model.Director;
-import com.imdb.model.Movie;
+import com.imdb.core.cases.actor.Actor;
+import com.imdb.core.cases.director.Director;
+import com.imdb.core.cases.movie.Movie;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

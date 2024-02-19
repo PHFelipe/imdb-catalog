@@ -1,6 +1,6 @@
 package com.imdb.application.impl;
 
-import com.imdb.model.Director;
+import com.imdb.core.cases.director.Director;
 import com.imdb.adapters.DirectorRepositoryGateway;
 import com.imdb.core.cases.director.DirectorUseCase;
 

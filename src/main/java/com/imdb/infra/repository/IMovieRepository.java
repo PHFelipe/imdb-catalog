@@ -1,6 +1,6 @@
 package com.imdb.infra.repository;
 
-import com.imdb.model.Movie;
+import com.imdb.core.cases.movie.Movie;
 
 import java.util.List;
 import java.util.Optional;

@@ -1,7 +1,7 @@
 package com.imdb.application.impl;
 
 import com.imdb.adapters.MovieRepositoryGateway;
-import com.imdb.model.Movie;
+import com.imdb.core.cases.movie.Movie;
 import com.imdb.core.cases.movie.MovieUseCase;
 
 import java.util.List;

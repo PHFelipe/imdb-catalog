@@ -1,8 +1,8 @@
 package com.imdb.infra.repository.impl;
 
 import com.imdb.infra.repository.IMovieRepository;
-import com.imdb.model.Movie;
-import com.imdb.resources.DataCollector;
+import com.imdb.core.cases.movie.Movie;
+import com.imdb.infra.database.DataCollector;
 
 import java.io.IOException;
 import java.util.ArrayList;

@@ -1,8 +1,8 @@
 package com.imdb.infra.repository.impl;
 
 import com.imdb.infra.repository.IActorRepository;
-import com.imdb.model.Actor;
-import com.imdb.resources.DataCollector;
+import com.imdb.core.cases.actor.Actor;
+import com.imdb.infra.database.DataCollector;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -12,7 +12,7 @@ import java.util.Optional;
 public class ActorRepository implements IActorRepository {
 
   private static final String FILE_PATH =
-    "src/main/java/com/imdb/resources/actors.txt";
+    "src/main/java/com/imdb/infra/database/actors.txt";
   private static ActorRepository instance;
   private static List<Actor> actorsList;
 

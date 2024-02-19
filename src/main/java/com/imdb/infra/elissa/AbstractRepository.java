@@ -1,5 +1,7 @@
 package com.imdb.infra.elissa;
 
+import com.imdb.core.cases.actor.Actor;
+
 import java.util.Collections;
 import java.util.List;
 

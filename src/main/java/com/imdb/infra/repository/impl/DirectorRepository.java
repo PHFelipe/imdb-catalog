@@ -1,8 +1,8 @@
 package com.imdb.infra.repository.impl;
 
 import com.imdb.infra.repository.IDirectorRepository;
-import com.imdb.model.Director;
-import com.imdb.resources.DataCollector;
+import com.imdb.core.cases.director.Director;
+import com.imdb.infra.database.DataCollector;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -12,7 +12,7 @@ import java.util.Optional;
 public class DirectorRepository implements IDirectorRepository {
 
   private static final String FILE_PATH =
-    "src/main/java/com/imdb/resources/directors.txt";
+    "src/main/java/com/imdb/infra/database/directors.txt";
   private int idGenerator = 1;
   private static DirectorRepository instance;
   private static List<Director> directorsList;

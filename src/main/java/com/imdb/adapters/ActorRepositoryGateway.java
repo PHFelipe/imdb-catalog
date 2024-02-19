@@ -1,8 +1,8 @@
 package com.imdb.adapters;
 
-import com.imdb.model.Actor;
+import com.imdb.core.cases.actor.Actor;
 import com.imdb.core.cases.actor.ActorUseCase;
-import com.imdb.infra.elissa.ActorRepository;
+import com.imdb.infra.repository.impl.ActorRepository;
 
 import java.util.List;
 import java.util.Objects;
@@ -29,25 +29,21 @@ public class ActorRepositoryGateway implements ActorUseCase {
     }
 
     @Override
-    //remove um ator
     public void removeActor(Actor actor) {
         actorRepository.removeActor(actor);
     }
 
     @Override
-    //atualiza ator
     public Actor updateActor(Actor actor) {
         return actorRepository.updateActor(actor);
     }
 
     @Override
-    //pesquisa ator por nome
     public Optional<Actor> searchActor(String name) {
         return actorRepository.searchActor(name);
     }
 
     @Override
-    //pega todos os atores
     public List<Actor> getAllActors() {
         return actorRepository.getAllActors();
     }
